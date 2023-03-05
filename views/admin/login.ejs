@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/adminCSS/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>buddyMage</title>
+</head>
+
+<body>
+
+	
+	<div class="container">
+		<form  class="login-email">
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Admin Panel Login</p>
+			<div class="input-group">
+				<input type="text" placeholder="UserName" id="username" required>
+			</div>
+			<div class="input-group">
+				<input type="password" placeholder="Password" id="password" required>
+			</div>
+			<div class="input-group">
+				<button id="submit" class="btn">Login</button>
+			</div>
+			<p class="login-register-text">Wrong Password</p>
+			<!-- <p class="login-register-text <%# data == 'failed' ? 'error' : '' #%> ">Wrong Password</p> -->
+		</form>
+	</div>
+
+
+<script>
+	
+
+$(document).ready(()=>{
+
+	$(document).on("click","#submit",function(e){
+		e.preventDefault();
+		var username=$('#username').val();
+		var password=$('#password').val();
+
+		$.ajax({
+			url:"/admin/login/verify",
+			type:"POST",
+			data:{username:username,password:password},
+			success:function(data){
+				console.log(data);
+				if(data['data']=='success'){window.location.replace('http://localhost:7000/admin/dashboard')};
+				if(data['data']=='password_fail'){$('.login-register-text').addClass('error').text('Wrong Password')};
+				if(data['data']=='userNotFound'){$('.login-register-text').addClass('error').text('Wrong Username')};
+
+				}
+			
+		})
+
+
+	});
+
+	
+}); //document ready function ends here
+
+</script>
+

@@ -1,0 +1,194 @@
+<%- include('./partials/__htmlHead.ejs') %>
+
+<body>
+    
+    <%- include('./partials/__preloader.ejs') %>
+
+    <%- include('./partials/__mainHeader.ejs') %>
+
+    <!-- Offcanvas Overlay -->
+    <div class="offcanvas-overlay"></div>
+
+    <%# include('./partials/__categorySliderHead.ejs') %>
+
+
+
+
+
+
+
+    <!-- ...:::: Start Wishlist Section:::... -->
+    <div class="wishlist-section">
+        <!-- Start Cart Table -->
+        <div class="wishlish-table-wrapper" data-aos="fade-up" data-aos-delay="0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table_desc">
+                            <div class="table_page table-responsive">
+                                <table id="tableWishlist">
+                                    <!-- Start Wishlist Table Head -->
+                                    <thead>
+                                        <tr>
+                                            <th class="product_thumb">Image</th>
+                                            <th class="product_name">Product</th>
+                                            <th class="product-price">Price</th>
+                                            <th class="product_stock">Stock Status</th>
+                                            <th class="product_remove">Delete</th>
+                                            <th class="product_addcart">Add To Cart</th>
+                                        </tr>
+                                    </thead> <!-- End Cart Table Head -->
+                                    <tbody>
+                                        <!-- Start Wishlist Single Item-->
+                                        <tr>
+                                            <td class="product_thumb"><a href="product-details-default.html"><img
+                                                        src="/publicAssets/images/product/default/home-1/default-1.jpg"
+                                                        alt=""></a></td>
+                                            <td class="product_name"><a href="product-details-default.html">Handbag fringilla</a></td>
+                                            <td class="product-price">$65.00</td>
+                                            <td class="product_stock">In Stock</td>
+                                            <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                            <td class="product_addcart"><a href="#" class="btn btn-md btn-golden"
+                                                    data-bs-toggle="modal" data-bs-target="#modalAddcart">Add To
+                                                    Cart</a></td>
+                                        </tr> <!-- End Wishlist Single Item-->
+                                        <!-- Start Wishlist Single Item-->
+                                        <tr>
+                                            <td class="product_thumb"><a href="product-details-default.html"><img
+                                                        src="/publicAssets/images/product/default/home-1/default-2.jpg"
+                                                        alt=""></a></td>
+                                            <td class="product_name"><a href="product-details-default.html">Handbags justo</a></td>
+                                            <td class="product-price">$90.00</td>
+                                            <td class="product_stock">In Stock</td>
+                                            <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                            <td class="product_addcart"><a href="#" class="btn btn-md btn-golden"
+                                                    data-bs-toggle="modal" data-bs-target="#modalAddcart">Add To
+                                                    Cart</a></td>
+                                        </tr> <!-- End Wishlist Single Item-->
+                                        <!-- Start Wishlist Single Item-->
+                                        <tr>
+                                            <td class="product_thumb"><a href="product-details-default.html"><img
+                                                        src="/publicAssets/images/product/default/home-1/default-3.jpg"
+                                                        alt=""></a></td>
+                                            <td class="product_name"><a href="product-details-default.html">Handbag elit</a></td>
+                                            <td class="product-price">$80.00</td>
+                                            <td class="product_stock">In Stock</td>
+                                            <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                            <td class="product_addcart"><a href="#" class="btn btn-md btn-golden"
+                                                    data-bs-toggle="modal" data-bs-target="#modalAddcart">Add To
+                                                    Cart</a></td>
+                                        </tr> <!-- End Wishlist Single Item-->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Cart Table -->
+    </div> 
+    <!-- ...:::: End Wishlist Section:::... -->
+
+<!-- ...:::: Start Wishlist Section:::... -->
+    <a href="index.html">    
+    <div class="loadMoreItems justify-content-around align-items-center" data-aos="fade-up" data-aos-delay="200" style="height: 4%;">
+            Continue...
+            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+        </div>
+    </a>
+
+<!-- ...:::: End Wishlist Section:::... -->
+
+
+
+
+
+
+
+
+
+    <!-- Start Footer Section -->
+    <%- include('./partials/__footer.ejs') %>
+    <!-- End Footer Section -->
+
+
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop" type="button"></button>
+
+    <!-- Start Modal Add cart -->
+    <%- include('./partials/__modalAddToCart.ejs') %>
+     <!-- End Modal Add cart -->
+
+    <!-- Start Modal Quickview cart -->
+    <%- include('./partials/__modalQuickViewItem.ejs') %>
+    <!-- End Modal Quickview cart -->
+
+
+    
+
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="/publicAssets/js/vendor/vendor.min.js"></script>
+    <script src="/publicAssets/js/plugins/plugins.min.js"></script>
+
+    <!-- jQuery -->
+<!-- <script src="/plugins/jquery/jquery.min.js"></script> -->
+
+
+    <!-- Main JS -->
+    <script src="/publicAssets/js/main.js"></script>
+
+
+<!-- Bootstrap 4 -->
+<!-- <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<!-- DataTables  & Plugins -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+
+
+<!-- Bootstrap 4 -->
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="/plugins/select2/js/select2.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+
+<script>
+           
+                $("#tableWishlist").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+                }).buttons().container().appendTo('#tableWishlist_wrapper .col-md-6:eq(0)');
+
+</script>
+
+<script>
+    $('.chooseLocation').select2({
+    placeholder: 'Choose State',
+    dropdownParent:"#searchLocation"
+    });
+
+    $('.chooseLocationHead').select2({
+    placeholder: 'Choose State',
+    // dropdownParent:"#searchLocation"
+    });
+    
+    </script>
+
+</body>
+
+
+</html>

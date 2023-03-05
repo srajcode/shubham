@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | DataTables</title>
+ 
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  
+  <% menuOpt=menuOpt %>
+  <%- include('./sidebarMenu.ejs', {menuOpt: menuOpt}); %>
+
+ 
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Country</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Country</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+ 
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+ 
+        <div class="card card-default col-md-7 collapsed-card">
+          <div class="card-header">
+            <h3 class="card-title"><b>Add / Update Country</b></h3>
+ 
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-tool" data-card-widget="remove">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <!-- <label>Minimal</label> -->
+                  <!-- <select class="form-control select2" style="width: 100%;"> -->
+                    <input type="text" id="countryIdField" hidden>
+                    <select class="form-control select2 select2-purple" id="countryList" data-dropdown-css-class="select2-purple" style="width: 100%;">
+                        <option disabled="disabled" selected="selected">Select Country</option>
+                        <option>India</option>
+                  </select>
+                </div>
+                <!-- /.form-group -->
+                <!-- <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                    <option disabled="disabled" selected="selected">Add Country</option>
+                    <option>Alaska</option>
+                    <option>California</option>
+                    <option>Delaware</option>
+                    <option>Tennessee</option>
+              </select>
+                -->
+ 
+                <!-- <div class="card-footer"> -->
+ 
+                <!-- /.form-group -->
+              </div>
+ 
+              <!-- /.col -->
+              <!-- <div class="col-md-2">
+                <img class="img-thumbnail" width="100%" max-height="20px" src="https://cdn-icons-png.flaticon.com/512/3523/3523865.png" alt="..." >
+              </div> -->
+              <div class="col-md-2">
+                <div class="my-1">
+                  <button type="submit" class="btn btn-info px-4" id="btnAddCountry">Submit</button>
+                  <button type="submit" class="btn btn-warning my-3 px-4" id="btnEditCountry">Update</button>
+                </div>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+ 
+ 
+            <!-- /.row -->
+          </div>
+        </div>
+ 
+       
+        <!-- table container stars here -->
+        <div class="row">
+          <div class="col-12">
+     
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">State Details</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="tableCountry" class="table table-bordered table-striped">
+                  <thead class="thead-dark">
+                  <tr>
+                    <th>Sl.No</th>
+                    <th>Id</th>
+                    <th>Country</th>
+                    <th>Unique Id</th>
+                    <th>Actions</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Trident</td>
+                    <td>Internet Explorer 4.0</td>
+                    <td>Win 95+</td>
+                    <td> 4</td>
+                    <td>
+                      <button type="button" class="btn btn-success">Active</button>
+                      <button type="button" class="btn btn-primary">Edit</button>
+                      <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Misc</td>
+                    <td>IE Mobile</td>
+                    <td>Windows Mobile 6</td>
+                    <td>C</td>
+                    <td>
+                      <button type="button" class="btn btn-success">Active</button>
+                      <button type="button" class="btn btn-primary">Edit</button>
+                      <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                  </tr>
+                  </tbody>
+                  <tfoot class="thead-dark">
+                    <tr>
+                        <th>Sl.No</th>
+                        <th>Id</th>
+                        <th>Country</th>
+                        <th>Unique Id</th>
+                        <th>Actions</th>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- table container ends here -->
+       
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+  <%- include('./footer.ejs') %>
+
+ 
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<!-- <script src="../../dist/js/adminlte.min.js"></script> -->
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<!-- AdminLTE App -->
+<!-- <script src="dist/js/adminlte.js"></script> -->
+ 
+  <!-- custom Javascript codes -->
+  <script src="/adminJS/loc_country.js"></script>   
+ 
+<!-- Select2 -->
+<script src="../../plugins/select2/js/select2.full.min.js"></script>
+<!-- Bootstrap4 Duallistbox -->
+<script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- InputMask -->
+<script src="../../plugins/moment/moment.min.js"></script>
+<script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Bootstrap Switch -->
+<script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+</body>
+</html>
+ 
+

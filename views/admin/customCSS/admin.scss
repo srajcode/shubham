@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$primary-color: rgb(0,79,89);
+$secondary-color: rgb(0,118,128);
+$white: rgb(255,255,255);
+$black: rgb(0,0,0);
+$font:"Poppins";
+
+*{box-sizing: border-box;}
+
+body{
+    font-family: $font !important;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.589);
+
+    border-radius: 10px;
+    font-family: $font !important;
+}
+
+.moveleft_8rem{
+    transition: all 0.3s linear;
+    left:8rem;
+}
+
+.moveleft_18rem{
+    transition: all 0.3s linear;
+    left:18rem;
+}
+
+.moveleft_52rem{
+    transition: all 0.3s linear;
+    left:52rem;
+}
+
+.moveleft_62rem{
+    transition: all 0.3s linear;
+    left:62rem;
+}
+
+
+.active{
+background-color: rgb(237,139,0);
+}
+
+.mybtn{
+    background-color: $primary-color;
+    color: $white;
+    border: 2px solid white;
+    border-radius: 5px !important;
+
+    &:hover{
+        color: white !important;
+        background-color: $secondary-color;
+    }
+}
+
+.Inactive{
+    background-color: rgb(237,139,0);
+
+    &:hover{
+        color: white !important;
+        background-color: rgb(197, 145, 71);
+    }
+    }
+
+.ml_15px{
+    margin-left: 13px !important;
+}
+
+
+.selectBox, .img_selector{
+    width: 75%;
+    padding-left: 10px !important;
+    padding-top: 10px  !important;
+    display: inline-block !important;
+    // margin-bottom: 3px !important;
+}
+
+
+
+.selectize-input {
+min-height: 45px !important;
+width: 100% !important;
+padding-top: 10px   !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-left: 10px !important;
+    padding-top: 8px !important;
+}
+
+.select2-container .select2-selection--single{
+    height: 42px !important;
+    margin: 10px 0px 0px 0px;
+    // margin: px 0px;
+    &:hover{
+        border:2px solid $primary-color;
+        border-color: $primary-color;
+    }
+}
+
+.inputText{
+    height: 42px;
+    margin-bottom: 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+.select2-selection__arrow{
+    display: none !important;
+}

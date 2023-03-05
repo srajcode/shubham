@@ -1,0 +1,120 @@
+
+
+  <!-- body content starts here -->
+
+  <div class="sidebar ">  <!-- add 'close' css to hide sidebar on first pageload. -->
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">Lojalo</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="/admin/dashboard">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="/admin/dashboard">Dashboard</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Products</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Category</a></li>
+          <li><a href="/admin/category">Category</a></li>
+          <li><a href="/admin/subcategory">Sub Category</a></li>
+          <li><a href="#">Items</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Shubham Raj</div>
+        <div class="job">Tech Analyst</div>
+      </div>
+      <!-- <i class='bx bx-log-out' id="logout"></i> -->
+      <a class='btn-logout' href="/admin/logout" style="color: white;">Logout</a>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text"></span>
+      <!-- <span class="text">Drop Down Sidebar</span> -->
+    </div>
+  </section>
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+
+    let containers=document.getElementsByClassName("container");
+    Array.from(containers).forEach(element => {
+      element.classList.toggle("moveleft_18rem");
+      element.classList.toggle("moveleft_8rem");
+    });
+
+    let containers2=document.getElementsByClassName("container-2");
+    Array.from(containers2).forEach(element => {
+      element.classList.toggle("moveleft_62rem");
+      element.classList.toggle("moveleft_52rem");
+    });
+  
+  });
+
+
+  </script>
+
+

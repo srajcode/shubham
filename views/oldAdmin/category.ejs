@@ -1,0 +1,97 @@
+
+
+<%- include('./header.ejs') %>
+
+
+<%- include('./sidebar.ejs') %>
+   
+<!-- body starts from here -->
+
+<!-- Adding custom javascript / AJAX calls -->
+
+
+<script src="/adminJS/category.js"></script>
+
+
+
+<div class="container moveleft_18rem pt-2 col-4 pb-3" style="top:5rem;">
+    <div class="row">
+        <h3 style="color:rgb(0,79,89);font-weight:bold;">Add Category</h3>
+    </div>
+        <select class="selectBox mb-3" id="categoryList">
+        <!-- <select class="form-select w-75 ml_15px" id="categoryList"> -->
+            <!-- injected dynamically -->
+            
+        </select>     
+        
+            <input class="form-control img_selector" style="margin-top: 10px;" type="file" id="catImage" onchange="validateImage(this,500000)">
+            <button type="btn" class="btn mybtn ml_15px" id="btnAddCategory" >Submit</button>
+
+    
+</div>
+
+
+<div class="container-2 container pt-2 col-4 moveleft_62rem" style="top:5rem;">
+    <div class="row">
+        <h3 style="color:rgb(0,79,89);font-weight:bold;">Update Category</h3>
+    </div>
+    <div class="row col-12 pb-3">       
+        <input type="text" id="updateCatText" class="w-75 ml_15px selectBox" style="border-radius: 5px;">
+        <input type="text" id="updateCatId" hidden>
+        
+        <input class="form-control img_selector" style="margin-top: 10px;margin-left: 13px;" type="file" id="updateCatImg" onchange="validateImage(this,500000)">
+
+        <div class="row col-3">
+            <button type="btn" class="btn mybtn ml_15px" id="btnEditCategory">Update</button>
+        </div>
+    </div>    
+    
+</div>
+    
+    <!-- image preview to update -->
+<div class="container" style="top:5rem;position: absolute;right: -56rem;background: none;">
+    <img id="updateCatImgPreview" src="" alt="Error loading" style="display: none;" >
+</div>
+
+<div class="container moveleft_18rem pt-3 pb-3" style="top:17rem; min-width: 83%;">
+        <table id="dataTable" class="table table-striped" style="width: 100%;">
+        <thead>
+            <tr>
+            <th scope="col" style="width: 40px !important;">Sl.No</th>
+            <th scope="col" style="width: 60px !important;">Category Id</th>
+            <th scope="col" style="width: 80px !important;">Category Name</th>
+            <th scope="col" style="width: 90px !important; text-align: center;">Image</th>
+            <th scope="col" style="width: 180px !important; text-align: center;">Unique Id</th>
+            <th scope="col" style="width: 160px !important; text-align: center;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <!-- <script>loadCategoryData()</script> -->
+            <!-- <tr>
+            <th scope="row">1</th>
+            <td>1</td>
+            <td>Furniture</td>
+            <td>Furniture</td>
+            <td><img src="/adminIMG/1.png" alt="error" style="width: 20px;height: 20px;text-align: center;"></td>
+            <td>
+                <a class="btn mybtn" href="#">Deactive</a>
+                <a class="btn btn-primary" href="#">Edit</a>
+                <a class="btn btn-danger" href="#">Delete</a>
+            </td>
+            </tr> -->
+
+            
+            
+        </tbody>
+        </table>
+
+
+
+</div>
+
+
+
+<!-- body ends starts from here -->
+
+<%- include('./footer.ejs') %>

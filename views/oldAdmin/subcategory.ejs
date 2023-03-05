@@ -1,0 +1,99 @@
+
+
+<%- include('./header.ejs') %>
+
+
+<%- include('./sidebar.ejs') %>
+   
+<!-- body starts from here -->
+
+<!-- Adding custom javascript / AJAX calls -->
+<script src="/adminJS/subCategory.js"></script>
+
+
+<div class="container moveleft_18rem pt-2 col-4 pb-3" style="top:5rem;">
+    <div class="row">
+        <h3 style="color:rgb(0,79,89);font-weight:bold;">Add Sub-Category</h3>
+    </div>
+        <select class="selectBox mb-3" id="categoryList">
+            <!-- injected dynamically -->
+            
+        </select>     
+        <a href="/admin/category" class="btn mybtn ml_15px" style="font-size: 16px;">+</a>
+    
+        <select class=" selectBox mt-3" id="subcategoryList">
+                <!-- injected dynamically -->
+                
+        </select>
+
+            <button type="btn" class="btn mybtn ml_15px" id="btnAddSubCategory" >Add</button>
+
+    
+</div>
+
+
+<div class="container-2 container pt-2 col-4 moveleft_62rem" style="top:5rem;">
+    <div class="row">
+        <h3 style="color:rgb(0,79,89);font-weight:bold;">Update Sub-Category</h3>
+    </div>
+    <div class="row col-12 pb-3">       
+
+        <select class="selectBox mb-3" id="updatecategoryList">
+            <!-- <select class="form-select w-75 ml_15px" id="categoryList"> -->
+                <!-- injected dynamically -->
+                
+        </select>  
+
+        <input type="text" id="updateSubCatText" class="w-75 inputText ml_15px" style="border-radius: 5px;">
+        <input type="text" id="updateSubCatId" hidden>
+        
+        <div class="row col-3">
+            <button type="btn" class="btn mybtn ml_15px" id="btnEditSubCategory">Update</button>
+        </div>
+    </div>    
+    
+</div>
+    
+
+
+<div class="container moveleft_18rem pt-3 pb-3" style="top:17rem; min-width: 83%;">
+        <table id="dataTable" class="table table-striped">
+        <thead>
+            <tr">
+            <th scope="col" style="width: 20px !important;">Sl.No</th>
+            <th scope="col" style="width: 40px !important;">Sub-Category Id</th>
+            <th scope="col" style="width: 90px !important;">Sub-Category</th>
+            <th scope="col" style="width: 100px !important;">Category Name</th>
+            <th scope="col" style="width: 170px !important;">Unique Id</th>
+            <th scope="col" style="width: 190px !important;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <!-- <script>loadCategoryData()</script> -->
+            <!-- <tr>
+            <th scope="row">1</th>
+            <td>1</td>
+            <td>Furniture</td>
+            <td>
+                <a class="btn mybtn" href="#">Deactive</a>
+                <a class="btn btn-primary" href="#">Edit</a>
+                <a class="btn btn-danger" href="#">Delete</a>
+            </td>
+            </tr> -->
+
+            
+        </tbody>
+        </table>
+
+
+
+</div>
+
+
+
+
+
+<!-- body ends starts from here -->
+
+<%- include('./footer.ejs') %>

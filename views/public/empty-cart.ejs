@@ -1,0 +1,65 @@
+<%- include('./partials/__htmlHead.ejs') %>
+
+<body>
+
+    
+    <%- include('./partials/__preloader.ejs') %>
+    
+    <%- include('./partials/__mainHeader.ejs') %>
+
+    <!-- Offcanvas Overlay -->
+    <div class="offcanvas-overlay"></div>
+
+    <%# include('./partials/__categorySliderHead.ejs') %>
+
+
+    <!-- ...::::Start About Us Center Section:::... -->
+    <div class="empty-cart-section section-fluid section-top-gap-100">
+        <div class="emptycart-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3">
+                        <div class="emptycart-content text-center">
+                            <div class="image">
+                                <img class="img-fluid" src="/publicAssets/images/emprt-cart/emptyCart.png" alt="">
+                            </div>
+                            <h4 class="title">Your Cart is Empty</h4>
+                            <h6 class="sub-title">Sorry Mate... No item Found inside your cart!</h6>
+                            <a href="shop-grid-sidebar-left.html" class="btn btn-lg btn-golden">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ...::::End  About Us Center Section:::... -->
+
+
+    <%- include('./partials/__footer.ejs') %>
+
+
+
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop" type="button"></button>
+
+    <!-- Start Modal Add cart -->
+    <%- include('./partials/__modalAddToCart.ejs') %>
+     <!-- End Modal Add cart -->
+
+    <!-- Start Modal Quickview cart -->
+    <%- include('./partials/__modalQuickViewItem.ejs') %>
+    <!-- End Modal Quickview cart -->
+
+
+
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="/publicAssets/js/vendor/vendor.min.js"></script>
+    <script src="/publicAssets/js/plugins/plugins.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="/publicAssets/js/main.js"></script>
+</body>
+
+
+
+</html>

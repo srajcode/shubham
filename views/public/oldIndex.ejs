@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+     <link rel="stylesheet" href="./assets/public/css/fontAwesome/all.min.css">     <!-- //font awesome -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="./assets/public/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/public/css/owl/css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./assets/public/css/owl/css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="./assets/public/css/homeStyle.css">
+</head>
+<body>
+    
+<div class="loginModal">
+    <div class="modalBox">
+        <div>Login Form</div>
+        <div class="loginInput">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" required placeholder="Enter your username">
+        </div>
+        <div class="loginInput">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" required placeholder="Enter your password">
+        </div>
+
+       
+
+        <div>
+            <button>Login</button>
+            <button id="hideLogin">Close</button>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="main">           <!-- 1st main div starts here     -->
+    <header>
+        <div class="head">
+            <h2>Lojalo</h2>
+            <div class="head_1">
+                <div class="location_search">
+                    <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <input type="text" placeholder="Enter your location" >
+ 
+                </div>
+
+                <div class="keyword_search">
+                    <input type="text" placeholder="Enter keyword to search item">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+
+                <div class="addedToCartIcon" >
+                    <i class="fa-solid fa-cart-shopping">0</i>
+                </div>
+
+                <div class="addPostTag">
+                    <button>
+                        <i class="fa-solid fa-circle-plus"></i>
+                        Post Adds
+                    </button>
+                </div>
+
+                <div class="loginTag">
+                    <button>
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </button>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </header>
+
+
+
+<div class="header2nd">
+    <!-- <div class="categoryList" >
+        <marquee behavior="alternate"  direction="left" hspace="20px" onmouseover="this.stop();" onmouseout="this.start()" >
+            <a class="categoryItem" href="">Furniture</a>
+            <a class="categoryItem" href="">Electronics</a>
+            <a class="categoryItem" href="">Fashion</a>
+            <a class="categoryItem" href="">Services</a>
+            <a class="categoryItem" href="">Vehicles</a>
+            <a class="categoryItem" href="">Sports</a>
+            <a class="categoryItem" href="">Jobs</a>
+            <a class="categoryItem" href="">JavaScript</a>
+            <a class="categoryItem" href="">MongoDB</a>
+        </marquee>
+    </div> -->
+
+    
+    <div class="categoryList" >
+        <marquee behavior="alternate"  direction="left" hspace="20px" onmouseover="this.stop();" onmouseout="this.start()" >
+            <a class="categoryItem" href="">Furniture</a>
+            <a class="categoryItem" href="">Electronics</a>
+            <a class="categoryItem" href="">Fashion</a>
+            <a class="categoryItem" href="">Services</a>
+            <a class="categoryItem" href="">Vehicles</a>
+            <a class="categoryItem" href="">Sports</a>
+            <a class="categoryItem" href="">Jobs</a>
+            <a class="categoryItem" href="">JavaScript</a>
+            <a class="categoryItem" href="">MongoDB</a>
+        </marquee>
+    </div>
+
+            <div class="suggestions">
+                <div>
+                    <h3>Suggested for you...</h3>
+                </div>
+                <div class="owl-carousel owl-theme carouselSuggestedItems">
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/public/images/product10.png" alt="" >
+                            <div class="itemDetails">
+                                <div class="ItemPrice">Rs.40,000</div>
+                                <div class="ItemName">Luxuary item</div>
+                                <div class="ItemYear">2021</div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/public/images/product11.png" alt="" >
+                            <div class="itemDetails">
+                                <div class="ItemPrice">Rs.40,000</div>
+                                <div class="ItemName">Luxuary item</div>
+                                <div class="ItemYear">2021</div>
+                            </div>
+                        </a>
+                    </div>
+                   
+                    
+                    
+                    
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/public/images/product12.png" alt="" >
+                            <div class="itemDetails">
+                                <div class="ItemPrice">Rs.40,000</div>
+                                <div class="ItemName">Luxuary item</div>
+                                <div class="ItemYear">2021</div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/public/images/product13.png" alt="" >
+                            <div class="itemDetails">
+                                <div class="ItemPrice">Rs.40,000</div>
+                                <div class="ItemName">Luxuary item</div>
+                                <div class="ItemYear">2021</div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/public/images/product14.png" alt="" >
+                            <div class="itemDetails">
+                                <div class="ItemPrice">Rs.40,000</div>
+                                <div class="ItemName">Luxuary item</div>
+                                <div class="ItemYear">2021</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/public/images/product15.png" alt="" >
+                            <div class="itemDetails">
+                                <div class="ItemPrice">Rs.40,000</div>
+                                <div class="ItemName">Luxuary item</div>
+                                <div class="ItemYear">2021</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+
+                <!-- <div>
+                    <h3></h3>
+                </div> -->
+            </div>
+
+            
+        </div>       <!-- END of header2nd div here     -->
+
+
+</div>              <!-- END of 1st main div starts here     -->
+
+
+
+<!-- <hr class="lineBreak"> -->
+
+
+
+<div class="categoryMainContent">
+<!-- <div class="categoryMainContent" style="background-color: aqua;"> -->
+    <div class="selectCategory">
+        <input class="radio" type="radio" checked name="selectCategory" id="selectCategory1">
+        <label class="lbl" for="selectCategory1">For Sale (New)</label>
+        <input class="radio" type="radio" name="selectCategory" id="selectCategory2">
+        <label class="lbl" for="selectCategory2">For Sale (Old)</label>
+        <input class="radio" type="radio" name="selectCategory" id="selectCategory3">
+        <label class="lbl" for="selectCategory3">For Rent (New)</label>
+        <input class="radio" type="radio" name="selectCategory" id="selectCategory4">
+        <label class="lbl" for="selectCategory4">For Rent (Old)</label>
+    
+        <div class="viewAllByCategory">More items</div>
+    </div>
+
+    <!-- recentContents -->
+    <div class="contentByCategory owl-carousel owl-theme productSlider4grid2row">
+        <div class="item">
+            <a href="#">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product10.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                    </div>
+                <!-- </div> -->
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product11.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                    </div>
+                <!-- </div> -->
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#" >
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product12.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                    </div>
+                <!-- </div> -->
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product13.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                    </div>
+                <!-- </div> -->
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#" >
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product14.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                    </div>
+                <!-- </div> -->
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product15.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                    </div>
+                <!-- </div> -->
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product16.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                    </div>
+                <!-- </div> -->
+            </a>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<hr class="lineBreak">
+
+
+
+
+<div class="mainContent">
+<!-- <div class="mainContent" style="background-color: aqua;"> -->
+    <div class="newAdded">
+        <div class="header">Recently Added</div>  
+        <div class="recentContents">
+
+            <a href="#" class="recentitems">
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product10.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                    </div>
+            </a>
+            
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product11.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product12.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product13.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product14.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product15.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product16.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product17.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product18.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product19.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product20.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+
+            <a href="#" class="recentitems">
+                <!-- <div class="recentitems"> -->
+                    <div class="itemImg">
+                        <img src="./assets/public/images/product12.png" alt="">
+                    </div>
+                    <div class="recentItemDetails">
+                        <div class="name">Harley Davidson</div>
+                        <div class="desc">Good Bike</div>
+                        <div class="price">Rs.14,000</div>
+                        <div class="smallTags">
+                            <div class="postDate">02nd Feb 2022</div>
+                            <div class="location">Patna, Bihar</div>
+                        </div>
+                    </div>
+                    <div class="useIcon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+
+        </div>
+
+        <div class="load_More">Load More</div>
+    </div>
+
+</div>
+
+
+<hr class="lineBreak">
+
+
+
+<footer style="background-color: rgb(218, 226, 226);">
+<!-- <footer style="background-color: aqua;"> -->
+    <div class="subscription">
+        <h2>Subscription</h2>
+        <select>
+            <option disabled selected value="0">Select all category of your interest...</option>
+            <option value="1">Furniture</option>
+            <option value="2">Services</option>
+            <option value="3">Fashion</option>
+            <option value="4">Sports</option>
+            <option value="5">Job</option>
+            <option value="6">Electronics</option>
+        </select>
+        <input type="email" placeholder="E-mail to receive updates...">
+        <button>Subscribe</button>
+    </div>
+
+    <div class="footer-options">
+        <ul>
+            <div>Follow On</div>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+            <li><a href=""><i class="fa-brands fa-instagram-square"></i>Instagram</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-options">
+        <ul>
+            <div>Know about us</div>
+            <li><a href="#"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
+            <li><a href=""><i class="fa-solid fa-square-phone"></i>Contact</a></li>
+            <li><a href=""><i class="fa-solid fa-gears"></i>Our Services</a></li>
+            <li><a href=""><i class="fa-solid fa-city"></i>Our Offices</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+    <!-- ::::::::::::::All JS Files here :::::::::::::: -->
+    <!-- Global Vendor, plugins JS -->
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+
+    <!--Plugins JS-->
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/material-scrolltop.js"></script>
+    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugins/jquery.zoom.min.js"></script>
+    <script src="assets/js/plugins/venobox.min.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <script src="assets/js/plugins/jquery.lineProgressbar.js"></script>
+    <script src="assets/js/plugins/aos.min.js"></script>
+    <script src="assets/js/plugins/jquery.instagramFeed.js"></script>
+    <script src="assets/js/plugins/ajax-mail.js"></script>
+
+    <script src="./assets/public/js/homeIndex.js"></script>
+    <script src="./assets/public/css/owl/owl.carousel.min.js"></script>
+    
+</body>
+</html>

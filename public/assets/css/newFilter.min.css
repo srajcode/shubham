@@ -1,0 +1,658 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter,  Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+
+
+
+.filterLeftPanel {
+    float: left;
+    width: 90%;
+    background: #FFFFFF;
+    min-height: 1000px;
+    padding: 35px 30px;
+    box-shadow: 0px 0px 30px #e2e2e2;
+    height: 100%}
+@media (max-width: 767px) {
+    .filterLeftPanel {
+    line-height: 1.125rem;
+}
+}@media (max-width: 992px) {
+    .filterLeftPanel {
+    display: none;
+}
+}.filterLeftPanel .filterCross-icon {
+    display: none;
+}
+@media (max-width: 992px) {
+    .filterLeftPanel .filterCross-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+}
+}.filterLeftPanel .filterTitleMain {
+    float: left;
+    width: 100%;
+    padding-bottom: 25px;
+}
+.filterLeftPanel .filterTitleMain h2 {
+    color: #2e2e2e;
+    font-size: 1.25rem;
+    font-weight: bold;
+    float: left;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .filterLeftPanel .filterTitleMain h2 {
+    font-size: 1.125rem;
+}
+}@media (max-width: 480px) {
+    .filterLeftPanel .filterTitleMain h2 {
+    font-size: 0.9375rem;
+}
+}.filterLeftPanel .filterTitleMain .resetIcon {
+    margin-top: 5px;
+    float: right;
+}
+@media (max-width: 767px) {
+    .filterLeftPanel .filterTitleMain .resetIcon {
+    margin-top: 0px;
+}
+}@media (max-width: 480px) {
+    .filterLeftPanel .filterTitleMain .resetIcon {
+    text-align: right;
+    margin-top: 0px;
+}
+}.filterLeftPanel .filterTitleMain .resetIcon a {
+    font-size: 0.875rem;
+    padding: 5px 5px 5px 25px;
+    color: #2b3395;
+    font-weight: 600;
+    background: url('/publicImages/icos/reset-icon.png') left 4px no-repeat;
+}
+@media (max-width: 359px) {
+    .filterLeftPanel .filterTitleMain .resetIcon a {
+    font-size: 0.8125rem;
+    background-size: 15px;
+    background-position: 6px 5px;
+}
+}.filterLeftPanel .filterBox {
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    border-top: #d4d4d4 solid 1px;
+}
+.filterLeftPanel .filterBox h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #636363;
+}
+.filterLeftPanel .filterBox ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: 0;
+}
+.filterLeftPanel .filterBox ul li {
+    display: inline-block;
+    margin-right: 7px;
+}
+.filterLeftPanel .filterBox ul li a {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: #b4b4b4 solid 1px;
+    display: block;
+    font-size: 13px;
+    color: #363636;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+@media (max-width: 1420px) {
+    .filterLeftPanel .filterBox ul li a {
+    padding: 5px 13px;
+}
+}@media (max-width: 1280px) {
+    .filterLeftPanel .filterBox ul li a {
+    padding: 5px 10px;
+}
+}.filterLeftPanel .filterBox ul li a:hover {
+    background: #00414B;
+    color: #FFFFFF;
+    border: #FFFFFF solid 1px;
+}
+.filterLeftPanel .filterBox ul li a.active {
+    background: #00414B;
+    color: #FFFFFF;
+    border: #FFFFFF solid 1px;
+}
+.filterLeftPanel .filterBox .checkBoxMain {
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: #d4d4d4 solid 1px;
+    float: left;
+}
+.filterLeftPanel .filterBox .checkBoxMain .CustumCheckbox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    width: 100%}
+.filterLeftPanel .filterBox .checkBoxMain .CustumCheckbox:last-child {
+    border-top: #d4d4d4 solid 1px;
+}
+.filterLeftPanel .filterBox .checkBoxMain .CustumCheckbox input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+.filterLeftPanel .filterBox .checkBoxMain .CustumCheckbox input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 11px;
+    width: 7px;
+    height: 15px;
+    border: solid #2b3395;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.filterLeftPanel .filterBox .checkBoxMain .CustumCheckbox label {
+    position: relative;
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: #636363;
+    font-weight: 500;
+}
+.filterLeftPanel .filterBox .checkBoxMain .CustumCheckbox label:before {
+    float: left;
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #c1c1c1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+}
+.filterLeftPanel .filterBox .checkBoxMain .CustumCheckbox label:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.filterLeftPanel .filterBox .checkBoxMain .CustumCheckbox label a {
+    color: #2b3395;
+    text-decoration: underline;
+}
+.filterLeftPanel .filterBox .checkBoxMain .CustumCheckbox span {
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 5px;
+    float: left;
+}
+.filterLeftPanel .accordionMain {
+    float: left;
+    width: 100%}
+.filterLeftPanel .accordionMain .accordion .card {
+    border: 0px;
+}
+.filterLeftPanel .accordionMain .accordion .card .card-header {
+    border: 0px;
+    background: none;
+    padding: 15px 0px;
+    border-top: #d4d4d4 solid 1px;
+}
+.filterLeftPanel .accordionMain .accordion .card .card-header h5 button {
+    padding: 0px;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #636363;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+}
+.filterLeftPanel .accordionMain .accordion .card .card-header h5 button.btn-link {
+    background: url('/publicImages/icos/minus.png') right center no-repeat;
+}
+.filterLeftPanel .accordionMain .accordion .card .card-header h5 button.active {
+    background: url('/publicImages/icos/plus.png') right center no-repeat;
+}
+.filterLeftPanel .accordionMain .accordion .card .card-header h5 button:hover {
+    text-decoration: none;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain {
+    float: left;
+    width: 100%}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget {
+    padding: 0px;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body ul, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age ul, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer ul, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type ul, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget ul {
+    padding: 0px 0px 15px 0px;
+    margin: 0px;
+    list-style: none;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body ul li, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age ul li, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer ul li, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type ul li, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget ul li {
+    display: inline-block;
+    margin-right: 7px;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body ul li a, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age ul li a, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer ul li a, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type ul li a, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget ul li a {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: #b4b4b4 solid 1px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #363636;
+    margin-bottom: 10px;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body ul li a:hover, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age ul li a:hover, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer ul li a:hover, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type ul li a:hover, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget ul li a:hover {
+    background: #00414B;
+    color: #FFFFFF;
+    border: #FFFFFF solid 1px;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body ul li a.active, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age ul li a.active, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer ul li a.active, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type ul li a.active, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget ul li a.active {
+    background: #00414B;
+    color: #FFFFFF;
+    border: #FFFFFF solid 1px;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox {
+    padding-bottom: 15px;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .inraccordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .inraccordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .inraccordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .inraccordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .inraccordCheckBox {
+    padding: 0 0 0 30px;
+}
+@media (max-width: 767px) {
+    .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .inraccordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .inraccordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .inraccordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .inraccordCheckBox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .inraccordCheckBox {
+    padding: 0 0 0 20px;
+}
+}.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .inraccordCheckBox .CustumCheckbox span, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .inraccordCheckBox .CustumCheckbox span, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .inraccordCheckBox .CustumCheckbox span, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .inraccordCheckBox .CustumCheckbox span, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .inraccordCheckBox .CustumCheckbox span {
+    font-size: 0.75rem;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .CustumCheckbox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .CustumCheckbox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .CustumCheckbox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .CustumCheckbox, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .CustumCheckbox {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .CustumCheckbox input, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .CustumCheckbox input, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .CustumCheckbox input, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .CustumCheckbox input, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .CustumCheckbox input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .CustumCheckbox input:checked+label:after, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .CustumCheckbox input:checked+label:after, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .CustumCheckbox input:checked+label:after, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .CustumCheckbox input:checked+label:after, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .CustumCheckbox input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 7px;
+    height: 13px;
+    border: solid #2b3395;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .CustumCheckbox label, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .CustumCheckbox label, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .CustumCheckbox label, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .CustumCheckbox label, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .CustumCheckbox label {
+    position: relative;
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: #636363;
+    font-weight: 500;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .CustumCheckbox label:before, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .CustumCheckbox label:before, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .CustumCheckbox label:before, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .CustumCheckbox label:before, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .CustumCheckbox label:before {
+    float: left;
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #c1c1c1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 22px;
+    height: 22px;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .CustumCheckbox label:after, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .CustumCheckbox label:after, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .CustumCheckbox label:after, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .CustumCheckbox label:after, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .CustumCheckbox label:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .CustumCheckbox label a, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .CustumCheckbox label a, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .CustumCheckbox label a, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .CustumCheckbox label a, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .CustumCheckbox label a {
+    color: #2b3395;
+    text-decoration: underline;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .CustumCheckbox span, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .CustumCheckbox span, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .CustumCheckbox span, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .CustumCheckbox span, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .CustumCheckbox span {
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-top: 2px;
+    float: left;
+}
+.filterLeftPanel .accordionMain .accordion .card .accordionContentMain .card-body .accordCheckBox .checkBoxMain .CustumCheckbox span b, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_age .accordCheckBox .checkBoxMain .CustumCheckbox span b, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_kilometer .accordCheckBox .checkBoxMain .CustumCheckbox span b, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .body_type .accordCheckBox .checkBoxMain .CustumCheckbox span b, .filterLeftPanel .accordionMain .accordion .card .accordionContentMain .car_Budget .accordCheckBox .checkBoxMain .CustumCheckbox span b {
+    font-weight: normal;
+    color: #7e7e7e;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox {
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-radius: 6px;
+    border: transparent solid 1px;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox.active {
+    border: #b6b6b6 solid 1px;
+    box-shadow: 0 0 5px #b6b6b6;
+}
+@media (max-width: 1280px) {
+    .filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox {
+    width: 23.5%}
+}.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a {
+    display: inline-block;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a span {
+    width: 44px;
+    height: 44px;
+    border: #b6b6b6 solid 1px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a span.white {
+    background: #FFFFFF;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a span.silver {
+    background: #e9ecec;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a span.black {
+    background: #000000;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a span.red {
+    background: #ec383b;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a span.gray {
+    background: #8b8b8b;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a span.orange {
+    background: #ec6f38;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a span.brown {
+    background: #761d1d;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a span.others {
+    background: #e4e4e4;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a label {
+    font-size: 0.875rem;
+    color: #000000;
+}
+.filterLeftPanel .accordionMain .accordion .card .colorPanelLeft .colorPanelBox a label b {
+    width: 100%;
+    float: left;
+    color: #a7a6a6;
+    font-weight: normal;
+}
+@media (max-width: 1199px) {
+    .filterLeftPanel {
+    width: 100%;
+    min-height: inherit;
+}
+.carListingSection .carListingTitle h2 {
+    font-size: 1.375rem;
+}
+.filterLeftPanel {
+    padding: 20px;
+}
+}@media (max-width: 1199px) and (max-width: 992px) {
+    .filterLeftPanel {
+    display: block;
+    position: fixed;
+    left: -40%;
+    z-index: 99;
+    width: 40%;
+    box-shadow: inherit;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 40px 20px 60px;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+}
+.filterLeftPanel.active {
+    left: 0;
+}
+}@media (max-width: 1199px) and (max-width: 767px) {
+    .filterLeftPanel {
+    width: 50%;
+    left: -50%}
+}@media (max-width: 1199px) and (max-width: 480px) {
+    .filterLeftPanel {
+    width: 70%;
+    left: -70%;
+    padding: 40px 15px 60px;
+}
+
+
+.card>hr {
+    margin-right: 0;
+    margin-left: 0;
+}
+.card>.list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.card>.list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+.card-subtitle {
+    margin-top: -.375rem;
+    margin-bottom: 0;
+}
+.card-text:last-child {
+    margin-bottom: 0;
+}
+.card-link:hover {
+    text-decoration: none;
+}
+.card-link+.card-link {
+    margin-left: 1.25rem;
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+.card-header+.list-group .list-group-item:first-child {
+    border-top: 0;
+}
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-footer:last-child {
+    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
+.card-header-tabs {
+    margin-right: -.625rem;
+    margin-bottom: -.75rem;
+    margin-left: -.625rem;
+    border-bottom: 0;
+}
+.card-header-pills {
+    margin-right: -.625rem;
+    margin-left: -.625rem;
+}
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+}
+.card-img {
+    width: 100%;
+    border-radius: calc(.25rem - 1px);
+}
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.card-img-bottom {
+    width: 100%;
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+}
+.card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.card-deck .card {
+    margin-bottom: 15px;
+}
+@media (min-width: 576px) {
+    .card-deck {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.card-deck .card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+}.card-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.card-group>.card {
+    margin-bottom: 15px;
+}
+@media (min-width: 576px) {
+    .card-group {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.card-group>.card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-bottom: 0;
+}
+.card-group>.card+.card {
+    margin-left: 0;
+    border-left: 0;
+}
+.card-group>.card:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card-group>.card:not(:last-child) .card-header, .card-group>.card:not(:last-child) .card-img-top {
+    border-top-right-radius: 0;
+}
+.card-group>.card:not(:last-child) .card-footer, .card-group>.card:not(:last-child) .card-img-bottom {
+    border-bottom-right-radius: 0;
+}
+.card-group>.card:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.card-group>.card:not(:first-child) .card-header, .card-group>.card:not(:first-child) .card-img-top {
+    border-top-left-radius: 0;
+}
+.card-group>.card:not(:first-child) .card-footer, .card-group>.card:not(:first-child) .card-img-bottom {
+    border-bottom-left-radius: 0;
+}
+}.card-columns .card {
+    margin-bottom: .75rem;
+}
+@media (min-width: 576px) {
+    .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+    }
+.card-columns .card {
+    display: inline-block;
+    width: 100%}
+}
+.accordion>.card {
+    overflow: hidden;
+}
+.accordion>.card:not(:first-of-type) .card-header:first-child {
+    border-radius: 0;
+}
+.accordion>.card:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 0;
+    border-radius: 0;
+}
+.accordion>.card:first-of-type {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.accordion>.card:last-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.accordion>.card .card-header {
+    margin-bottom: -1px;
+}
+
+}
+.checkBoxMain.carbrand {
+    max-height: 350px;
+    overflow-y: auto;
+}
